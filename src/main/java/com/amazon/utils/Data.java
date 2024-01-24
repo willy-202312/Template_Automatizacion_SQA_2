@@ -1,2 +1,4 @@
-package com.amazon.utils;public class Data {
+package com.amazon.utils;
+
+public class Data {
 }
