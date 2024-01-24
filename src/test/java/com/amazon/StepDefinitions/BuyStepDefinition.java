@@ -1,5 +1,6 @@
 package com.amazon.StepDefinitions;
 
+import com.amazon.task.AddProductCart2Task;
 import com.amazon.task.AddProductCartTask;
 import com.amazon.task.ChooseProductTask;
 import com.amazon.task.ConfirmPayTask;
@@ -46,6 +47,12 @@ public class BuyStepDefinition  {
     public void add_product_on_the_cart() {
 
         OnStage.theActorInTheSpotlight().attemptsTo(AddProductCartTask.addProduct());
+    }
+
+    @When("Add product two on the cart")
+    public void add_product_two_on_the_cart() {
+
+        OnStage.theActorInTheSpotlight().attemptsTo(AddProductCart2Task.addProduct2());
     }
     @Then("User confirm your buy")
     public void user_confirm_your_buy() {

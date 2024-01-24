@@ -12,7 +12,7 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClic
 
 public class AddProductCartTask implements Task {
 
-//Metodo para agregar productos al carrito//
+//Metodo para agregar productos al carrito
     @Override
     public <T extends Actor> void performAs(T actor) {
 
@@ -23,14 +23,6 @@ public class AddProductCartTask implements Task {
                 Click.on(ADD_PRODUCTCART)
                 );
 
-        WaitUntil.the(BACK_CATALOG, isClickable());
-        actor.attemptsTo(
-                Click.on(BACK_CATALOG),
-                Click.on(BTN_CATEGOR3),
-                Click.on(BTN_CATEGOR4),
-                Click.on(BTN_PRODUCT2),
-                Click.on(ADD_PRODUCTCART2)
-                );
     }
 
     public static Performable addProduct() {
