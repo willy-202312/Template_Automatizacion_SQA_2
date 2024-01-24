@@ -12,7 +12,7 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClic
 
 public class AddProductCartTask implements Task {
 
-
+//Metodo para agregar productos al carrito//
     @Override
     public <T extends Actor> void performAs(T actor) {
 
