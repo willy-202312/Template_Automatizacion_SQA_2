@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="159db25fe797e6923dbb930c0850a1f2134fd91fdc39a173a37e9a4a2c724cd0.html">User Do Register In The Page Amazon.com</a></span>
+                > <span class="truncate-60"><a
+                    href="ffe57e35d8bf22264e76c5d0352ac3b339c10b9b6ec35ab1e37309da7de5196a.html">User access in the page amazon.com </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 22-01-2024 22:27</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">User Do Register In The Page Amazon.com </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">User access in the page amazon.com
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="4712a923b031a9af1123a606bfa08d9d9abbbfd8c1e58ed9e761e549ebb93fbf.png" title=" Given the user is in the page amazon.com" width="1920"/>
+                <img src="4712a923b031a9af1123a606bfa08d9d9abbbfd8c1e58ed9e761e549ebb93fbf.png" title=" User opens the browser at https://www.amazon.com/?&amp;tag=googleuscol05-20&amp;ref=pd_sl_7d0mn8q9wb_e&amp;adgrpid=159179349492&amp;hvpone=&amp;hvptwo=&amp;hvadid=675113331057&amp;hvpos=&amp;hvnetw=g&amp;hvrand=14742458444399618328&amp;hvqmt=e&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=1003654&amp;hvtargid=kwd-10573980&amp;hydadcr=8635_13554489&amp;language=es_US" width="1920"/>
+                <img src="9ba60d4801924f2a1a001d7cd469615be524e76860309c35fb42ef751d093d72.png" title=" Given the user is in the page amazon.com (completed)" width="1920"/>
+                <img src="5b1cb640241917e99c46e8a2676767c1d96c8c9552191d0759684422f406796a.png" title=" When User choose a product" width="1920"/>
+                <img src="5b1cb640241917e99c46e8a2676767c1d96c8c9552191d0759684422f406796a.png" title=" User choose product task" width="1920"/>
+                <img src="aaf1c36bd129f688effaf5a44feb2a388f910b6ef078ed59d8456f6f0d0920a6.png" title=" User clicks on Categoria1" width="1920"/>
+                <img src="aaf1c36bd129f688effaf5a44feb2a388f910b6ef078ed59d8456f6f0d0920a6.png" title=" User clicks on Categoria2" width="1920"/>
+                <img src="405eaab950c1273f510c0478a37cf6445f7c39de666d405e6aa36e74a7def719.png" title=" User clicks on Categoria2 (completed)" width="1920"/>
+                <img src="405eaab950c1273f510c0478a37cf6445f7c39de666d405e6aa36e74a7def719.png" title=" User choose product task (completed)" width="1920"/>
+                <img src="405eaab950c1273f510c0478a37cf6445f7c39de666d405e6aa36e74a7def719.png" title=" When User choose a product (completed)" width="1920"/>
+                <img src="7d1f0b26911924d148873e39c202a536c581dd74a8d3b12afdafa03cdfb2de76.png" title=" And Add product on the cart" width="1920"/>
+                <img src="7d1f0b26911924d148873e39c202a536c581dd74a8d3b12afdafa03cdfb2de76.png" title=" User add product cart task" width="1920"/>
+                <img src="7d1f0b26911924d148873e39c202a536c581dd74a8d3b12afdafa03cdfb2de76.png" title=" User clicks on Elegir Producto" width="1920"/>
+                <img src="7d1f0b26911924d148873e39c202a536c581dd74a8d3b12afdafa03cdfb2de76.png" title=" User clicks on Adicionar al Carro" width="1920"/>
+                <img src="17415c490aa7963bb6559a806bc67995ef708350855e21fd5d711ebd5a382d1b.png" title=" User clicks on Adicionar al Carro (completed)" width="1920"/>
+                <img src="17415c490aa7963bb6559a806bc67995ef708350855e21fd5d711ebd5a382d1b.png" title=" User clicks on Volver al Catalogo" width="1920"/>
+                <img src="9f25b826b364275c21a4b0abd9ee0f84757dedb65051c5a5cab710a4c8518815.png" title=" User clicks on Volver al Catalogo (completed)" width="1920"/>
+                <img src="9f25b826b364275c21a4b0abd9ee0f84757dedb65051c5a5cab710a4c8518815.png" title=" User clicks on Categoria3" width="1920"/>
+                <img src="c0c727c5c531c3cd4e138726f7e40dc2e7b5827ca70b0387a10e6130b9835d18.png" title=" User clicks on Categoria3 (completed)" width="1920"/>
+                <img src="c0c727c5c531c3cd4e138726f7e40dc2e7b5827ca70b0387a10e6130b9835d18.png" title=" User clicks on Categoria4" width="1920"/>
+                <img src="28df2708b9c5127ec27917ec03714b2f95738b330928d72a924664b482058031.png" title=" User clicks on Categoria4" width="1920"/>
+                <img src="932dc58d46e0e5ce31a3135917523065d342bd795857b38294a6a8399ac58b6c.png" title=" User clicks on Categoria4 (completed)" width="1920"/>
+                <img src="932dc58d46e0e5ce31a3135917523065d342bd795857b38294a6a8399ac58b6c.png" title=" User clicks on Elegir Producto2" width="1920"/>
+                <img src="6675e8c68af6e8492d695c3c2f92d08fa9d8be60991cb80d2487f8585472ef7c.png" title=" User clicks on Elegir Producto2" width="1920"/>
+                <img src="c11cf304911914e02cc06627de3f0a66412a9ad42f7cba37daf4fc5ce097afa5.png" title=" User clicks on Elegir Producto2 (completed)" width="1920"/>
+                <img src="c11cf304911914e02cc06627de3f0a66412a9ad42f7cba37daf4fc5ce097afa5.png" title=" User clicks on Adicionar al Carro" width="1920"/>
+                <img src="fdff85135330f361a9218cbd2f0725e129569dc6209fe0fe322ce33ce1eba0da.png" title=" User clicks on Adicionar al Carro (completed)" width="1920"/>
+                <img src="fdff85135330f361a9218cbd2f0725e129569dc6209fe0fe322ce33ce1eba0da.png" title=" User add product cart task (completed)" width="1920"/>
+                <img src="fdff85135330f361a9218cbd2f0725e129569dc6209fe0fe322ce33ce1eba0da.png" title=" And Add product on the cart (completed)" width="1920"/>
+                <img src="6a02d27bcd8732d30438a00f0b87f1f281a213688a309e8895304c702445f348.png" title=" Then User confirm your buy" width="1920"/>
+                <img src="6a02d27bcd8732d30438a00f0b87f1f281a213688a309e8895304c702445f348.png" title=" User confirm pay task" width="1920"/>
+                <img src="6a02d27bcd8732d30438a00f0b87f1f281a213688a309e8895304c702445f348.png" title=" User clicks on Confirmar Compra" width="1920"/>
+                <img src="31b42f427244c7310165fd49526ab17692e44e7bee5bd5caf46feaf26236c5b9.png" title=" User clicks on Confirmar Compra (completed)" width="1920"/>
+                <img src="6a02d27bcd8732d30438a00f0b87f1f281a213688a309e8895304c702445f348.png" title=" User confirm pay task (completed)" width="1920"/>
+                <img src="6a02d27bcd8732d30438a00f0b87f1f281a213688a309e8895304c702445f348.png" title=" Then User confirm your buy (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.0</span>
+</div>
+</body>
+</html>

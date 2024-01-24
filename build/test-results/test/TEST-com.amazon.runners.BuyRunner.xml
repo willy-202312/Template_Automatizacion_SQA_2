@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.amazon.runners.BuyRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-23T03:27:25" hostname="SQABOG-SQA-4298" time="88.322">
+  <properties/>
+  <testcase name="User access in the page amazon.com" classname="com.amazon.runners.BuyRunner" time="88.322"/>
+  <system-out><![CDATA[
+Scenario: User access in the page amazon.com ?[90m# src/test/resources/features/buy.feature:4?[0m
+  ?[32mGiven ?[0m?[32mthe user is in the page amazon.com?[0m   ?[90m# com.amazon.StepDefinitions.BuyStepDefinition.the_user_is_in_the_page_amazon_com()?[0m
+  ?[32mWhen ?[0m?[32mUser choose a product?[0m                 ?[90m# com.amazon.StepDefinitions.BuyStepDefinition.user_choose_a_product()?[0m
+  ?[32mAnd ?[0m?[32mAdd product on the cart?[0m                ?[90m# com.amazon.StepDefinitions.BuyStepDefinition.add_product_on_the_cart()?[0m
+  ?[32mThen ?[0m?[32mUser confirm your buy?[0m                 ?[90m# com.amazon.StepDefinitions.BuyStepDefinition.user_confirm_your_buy()?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 120.0.6099.109 (3419140ab665596f21b385ce136419fde0924272-refs/branch-heads/6099@{#1483}) on port 12319
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ene. 22, 2024 10:27:33 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 120
+ene. 22, 2024 10:27:33 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.7.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+?[32m?[1m?????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m View your Cucumber Report at:                                            ?[32m?[1m??[0m
+?[32m?[1m??[0m ?[1m?[36m?[4mhttps://reports.cucumber.io/reports/a9852f31-4dfd-43c9-ad2c-f91a8343afa3?[0m ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                          ?[32m?[1m??[0m
+?[32m?[1m??[0m ?[1mThis report will self-destruct in 24h.?[0m                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m Keep reports forever: ?[4m?[1m?[36mhttps://reports.cucumber.io/profile?[0m                ?[32m?[1m??[0m
+?[32m?[1m?????????????????????????????????????????????????????????????????????????????[0m]]></system-err>
+</testsuite>
