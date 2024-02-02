@@ -16,10 +16,10 @@ public class AddProductCart2Task implements Task {
 
         WaitUntil.the(BACK_CATALOG, isClickable());
         actor.attemptsTo(
-                Click.on(BACK_CATALOG),
+                Click.on(BACK_CATALOG) ,
                 Click.on(BTN_CATEGOR3),
                 Click.on(BTN_CATEGOR4),
-                Click.on(BTN_PRODUCT2),
+                Click.on(BTN_PRODUCT2) ,
                 Click.on(ADD_PRODUCTCART2)
         );
     }
