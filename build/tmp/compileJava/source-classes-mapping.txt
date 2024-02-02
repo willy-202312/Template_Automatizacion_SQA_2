@@ -1,2 +1,12 @@
+com/amazon/task/ChooseProductTask.java
+ com.amazon.task.ChooseProductTask
+com/amazon/utils/Data.java
+ com.amazon.utils.Data
+com/amazon/task/ConfirmPayTask.java
+ com.amazon.task.ConfirmPayTask
+com/amazon/task/AddProductCartTask.java
+ com.amazon.task.AddProductCartTask
 com/amazon/ui/AmazonUi.java
  com.amazon.ui.AmazonUi
+com/amazon/task/AddProductCart2Task.java
+ com.amazon.task.AddProductCart2Task

@@ -30,9 +30,9 @@ public class BuyStepDefinition  {
     @Given("the user is in the page amazon.com")
     public void the_user_is_in_the_page_amazon_com() {
 
-        theActorCalled("User").wasAbleTo(Open.url("https://www.amazon.com/?&tag=googleuscol05-20&ref=pd_sl_7d0mn8q9wb_e&adgrpid=159179349492&hvpone=&hvptwo=&hvadid=675113331057&hvpos=&hvnetw=g&hvrand=14742458444399618328&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1003654&hvtargid=kwd-10573980&hydadcr=8635_13554489&language=es_US"));
+        theActorCalled("User").wasAbleTo(Open.url("https://www.amazon.comY"));
         try {
-            Thread.sleep(8000);
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
